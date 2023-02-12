@@ -12,45 +12,16 @@ export class ChatUI {
         this._lista = l;
     }
 
-    // templateLI(doc) {
-    //     let data = doc.data();
-    //     let id = doc.id;
-    //     let vreme = data.created_at.toDate();
-    //     let ime = data.username;
-    //     let x = localStorage.getItem("cuvaj");
-    //     console.log(x);
-    //     let htmlli;
-    //     if(ime == x) {
-    //         htmlli=
-    //         `<li class = "oblak"  id ="${id}" style="float: right;border-radius:30px 0px 40px 30px;background-image: linear-gradient(45deg,rgb(45, 27, 50),rgb(12, 183, 100))">
-            
-    //            <span class = "ime">${data.username}:</span>
-    //            <span class = "poruka">${data.message}</span>
-    //            <div class= "vreme">${this.formatVreme(vreme)}</div>
-    //            <img src="slika/kanta.png" style= "width: 25px" id = "brisi" class = "kanta">
-    //        </li>`;
-    //     }
-    //     else{
-    //         htmlli=
-    //      `<li class = "oblak"  id ="${id}">
-         
-    //         <span class = "ime">${data.username}:</span>
-    //         <span class = "poruka">${data.message}</span>
-    //         <div class= "vreme">${this.formatVreme(vreme)}</div>
-    //         <img src="slika/kanta.png" style= "width: 25px" id = "brisi" class = "kanta">
-    //     </li>`;
-    //     }
-        
-    //     this.lista.innerHTML += htmlli;
-        
-        
-    // }
-    templateliright(doc) {
+    templateLI(doc) {
         let data = doc.data();
         let id = doc.id;
         let vreme = data.created_at.toDate();
-       
-        let htmlli=
+        let ime = data.username;
+        let x = localStorage.getItem("cuvaj");
+        console.log(x);
+        let htmlli;
+        if(ime == x) {
+            htmlli=
             `<li class = "oblak"  id ="${id}" style="float: right;border-radius:30px 0px 40px 30px;background-image: linear-gradient(45deg,rgb(45, 27, 50),rgb(12, 183, 100))">
             
                <span class = "ime">${data.username}:</span>
@@ -58,26 +29,55 @@ export class ChatUI {
                <div class= "vreme">${this.formatVreme(vreme)}</div>
                <img src="slika/kanta.png" style= "width: 25px" id = "brisi" class = "kanta">
            </li>`;
-       
-        this.lista.innerHTML += htmlli;
-         
-    }
-
-    templatelileft(doc) {
-        let data = doc.data();
-        let id = doc.id;
-        let vreme = data.created_at.toDate();
-        let htmlli=
+        }
+        else{
+            htmlli=
          `<li class = "oblak"  id ="${id}">
+         
             <span class = "ime">${data.username}:</span>
             <span class = "poruka">${data.message}</span>
             <div class= "vreme">${this.formatVreme(vreme)}</div>
             <img src="slika/kanta.png" style= "width: 25px" id = "brisi" class = "kanta">
         </li>`;
-    
+        }
+        
         this.lista.innerHTML += htmlli;
         
+        
     }
+    // templateliright(doc) {
+    //     let data = doc.data();
+    //     let id = doc.id;
+    //     let vreme = data.created_at.toDate();
+       
+    //     let htmlli=
+    //         `<li class = "oblak"  id ="${id}" style="float: right;border-radius:30px 0px 40px 30px;background-image: linear-gradient(45deg,rgb(45, 27, 50),rgb(12, 183, 100))">
+            
+    //            <span class = "ime">${data.username}:</span>
+    //            <span class = "poruka">${data.message}</span>
+    //            <div class= "vreme">${this.formatVreme(vreme)}</div>
+    //            <img src="slika/kanta.png" style= "width: 25px" id = "brisi" class = "kanta">
+    //        </li>`;
+       
+    //     this.lista.innerHTML += htmlli;
+         
+    // }
+
+    // templatelileft(doc) {
+    //     let data = doc.data();
+    //     let id = doc.id;
+    //     let vreme = data.created_at.toDate();
+    //     let htmlli=
+    //      `<li class = "oblak"  id ="${id}">
+    //         <span class = "ime">${data.username}:</span>
+    //         <span class = "poruka">${data.message}</span>
+    //         <div class= "vreme">${this.formatVreme(vreme)}</div>
+    //         <img src="slika/kanta.png" style= "width: 25px" id = "brisi" class = "kanta">
+    //     </li>`;
+    
+    //     this.lista.innerHTML += htmlli;
+        
+   // }
 
     formatVreme(vreme) {
        

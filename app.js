@@ -31,18 +31,19 @@ let chatUI = new ChatUI(ul);
 
 chatroom.getChats(doc=> { 
 
-    // general.classList.add("yellow");
+    general.classList.add("yellow");
     let data = doc.data();
     console.log(data);
     console.log(data.username);
-    if(data.username == user){
-        chatUI.templateliright(doc);
-    }
-    else{
-        chatUI.templatelileft(doc);
-    }
+    console.log(user);
+    // if(data.username == user){
+    //     chatUI.templateliright(doc);
+    // }
+    // else{
+    //     chatUI.templatelileft(doc);
+    // }
     
-    // chatUI.templateLI(doc);
+    chatUI.templateLI(doc);
     });
   
 
@@ -87,7 +88,7 @@ update.addEventListener("submit", e => {
     localStorage.setItem("cuvaj", nova);
     update.reset();
     chatroom.updateUsername(nova);
-    // location.reload();
+    location.reload();
   
 });
 
