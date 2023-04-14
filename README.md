@@ -1,7 +1,8 @@
-<h1><b>Chat</b></h1>
+<h1>Chat App</h1>
 <h2>HTML, CSS, JS</h2>
+<p>Message can be:</p>
 <ul>
-<li><i>Create</i></li>
-<li<i>Read</i></li>
-<li><i>Delete</i></li>
+<li><i>Created</i></li>
+<li><i>Readed</i></li>
+<li><i>Deleted</i></li>
 </ul>
