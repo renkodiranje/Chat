@@ -1,7 +1,7 @@
-<h1><mark>Chat</mark></h1>
-<h2><strong>HTML, CSS, JS</strong></h2>
+<h1>Chat</h1>
+<h2>HTML, CSS, JS</h2>
 <ul>
 <li><i>Create</i></li>
-<li>Read</li>
-<li>Delete</li>
+<li<i>>Read</i></li>
+<li><i>Delete</i></li>
 </ul>
