@@ -1,18 +1,7 @@
-<html>
-<style>
-    h1 {
-        color:blue;
-        text-transform: uppercase;
-    }
-    h2{
-        text-decoration:underline;
-    }
-</style>
-<h1 style="color:blue;">Chat</h1>
-<h2 style="font-style:italic;">HTML, CSS, JS</h2>
+<h1><mark>Chat</mark></h1>
+<h2><strong>HTML, CSS, JS</strong></h2>
 <ul>
 <li>Create</li>
 <li>Read</li>
 <li>Delete</li>
 </ul>
-</html>
