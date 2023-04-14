@@ -7,6 +7,7 @@
     <title>chat</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsiv.css">
+   
 </head>
 
 <body>
@@ -15,7 +16,11 @@
         <h1>IT Bootcamp Chat</h1>
         <h3>Chose a chatroom</h3>
     </header>
-
+    <div id="sandwich">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
     <nav class="navigacija row" id ="nav">
         <button id="general" class="col-3 col-t-6 col-m-12 ">#general</button>
         <button id="js" class="col-3 col-t-6 col-m-12">#js</button>
@@ -39,8 +44,12 @@
         </form>
 
         <form class="row" id ="send">
+            <audio id="ton">
+                <source src="ton/the-notification-email-143029.mp3" type="audio/mp3">
+            </audio>
             <textarea name="poruka" id="poruka" cols="30" rows="10" class="col-6 col-m-12 col-t-6" placeholder="Your message..."></textarea>
-            <input type="submit" class="col-3 col-m-12 col-t-6" value="Send">
+            <input type="submit" class="col-3 col-m-12 col-t-6" value="Send"/> 
+            
         </form>
         
         <form class="row" id="update">
