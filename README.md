@@ -3,6 +3,6 @@
 <p>Messages can be:</p>
 <ul>
 <li><i>Created</i></li>
-<li><i>Readed</i></li>
+<li><i>Read</i></li>
 <li><i>Deleted</i></li>
 </ul>
