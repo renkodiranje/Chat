@@ -28,7 +28,7 @@ export class Chatroom {
       let user = localStorage.getItem("cuvaj");
       let note = document.getElementById("alert");
 
-      if (this.username != user) {
+      if (this.username != user && this.username != "anonimus") {
         note.style.display = "inline";
         let noteTime = setTimeout(() => {
           note.style.display = "none";
