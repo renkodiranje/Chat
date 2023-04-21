@@ -1,5 +1,5 @@
 <h1>Chat App</h1>
-<h2>HTML, CSS, JS</h2>
+<h2>HTML, CSS, JS, firebase</h2>
 <p>Messages can be:</p>
 <ul>
 <li><i>Created</i></li>

@@ -19,6 +19,7 @@ export class ChatUI {
     let x = localStorage.getItem("cuvaj");
     console.log(x);
     let htmlli;
+
     if (ime == x) {
       htmlli = `<li class = "oblak"  id ="${id}" style="float: right;border-radius:30px 0px 40px 30px;background-image: linear-gradient(45deg,rgb(45, 27, 50),rgb(12, 183, 100));">
             

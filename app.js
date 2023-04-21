@@ -24,7 +24,7 @@ let formaboja = document.getElementById("boja");
 let nav = document.getElementById("nav");
 let ton = document.getElementById("ton");
 let sandwich = document.getElementById("sandwich");
-
+let alert = document.getElementById("alert");
 let chatroom = new Chatroom(soba, user);
 let chatUI = new ChatUI(ul);
 
@@ -80,14 +80,24 @@ send.addEventListener("submit", (e) => {
 //update username
 update.addEventListener("submit", (e) => {
   e.preventDefault();
+
   let nova = username.value;
   chatroom.username = nova;
   localStorage.setItem("cuvaj", nova);
   update.reset();
   chatroom.updateUsername(nova);
-  location.reload();
+  chatUI.clearUl();
+  chatroom.getChats((doc) => {
+    chatUI.templateLI(doc);
+  });
 });
-
+// update.addEventListener("submit", (e) => {
+//   e.preventDefault();
+//   alert.style.display = "inline";
+//   setTimeout(() => {
+//     alert.style.display = "none";
+//   }, 3000);
+// });
 //change room
 nav.addEventListener("click", (e) => {
   e.preventDefault();
