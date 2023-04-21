@@ -91,13 +91,7 @@ update.addEventListener("submit", (e) => {
     chatUI.templateLI(doc);
   });
 });
-// update.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   alert.style.display = "inline";
-//   setTimeout(() => {
-//     alert.style.display = "none";
-//   }, 3000);
-// });
+
 //change room
 nav.addEventListener("click", (e) => {
   e.preventDefault();
