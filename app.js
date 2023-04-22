@@ -86,8 +86,7 @@ update.addEventListener("submit", (e) => {
   localStorage.setItem("cuvaj", nova);
   update.reset();
   chatroom.updateUsername(nova);
-  //location.reload();
-  chatUI.clearUl();
+  location.reload();
 });
 
 //change room
