@@ -9,6 +9,30 @@
   nav {
     display: none;
   }
+  .ime {
+    font-size: 16px;
+    padding: 5px 2px;
+  }
+  .poruka {
+    font-size: 14px;
+    padding: 5px 3px;
+    font-weight: 400;
+  }
+  .vreme {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .oblak {
+    margin: 5px;
+    padding: 5px 10px;
+    word-break: keep-all;
+  }
+  button {
+    font-size: medium;
+  }
+  input[type="submit"] {
+    font-size: 14px;
+  }
 
   section {
     background-image: url("https://cdn.pixabay.com/photo/2022/09/17/20/01/mail-7461731_960_720.png");
